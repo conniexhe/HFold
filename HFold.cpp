@@ -1,4 +1,3 @@
-
 // a simple driver for the HFold
 
 #include <stdio.h>
@@ -261,24 +260,16 @@ int main (int argc, char *argv[])
     return 0;
 }
 
+// Edited by Connie He to reflect new usage with conda package Aug 5 2022
 void printUsage(){
-	/*
-	printf ("\nUsage: HFold_iterative <sequence> <structure>\n");
-	printf ("Example: ./HFold_iterative \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" \"(____________________________)\" \n");
-	printf ("Or \nUsage: HFold_iterative <path to input file> <path to output file>\n");
-	printf ("Example: ./HFold_iterative \"/home/username/Desktop/inputFile.txt\" -o \"/home/username/Desktop/outFile.txt\" \n");
-	printf ("\tRestricted structure symbols:\n");
-	printf ("\t\t() restricted base pair\n");
-	printf ("\t\t _ no restriction\n");
-*/
-	printf("Usage ./HFold --s <sequence> --r <structure> [--o </path/to/file>]\n");
+	printf("Usage HFold --s <sequence> --r <structure> [--o </path/to/file>]\n");
 	printf("or\n");
-	printf("Usage ./HFold --i </path/to/file> [--o </path/to/file>]\n");
+	printf("Usage HFold --i </path/to/file> [--o </path/to/file>]\n");
 	printf ("  Restricted structure symbols:\n");
 	printf ("    () restricted base pair\n");
 	printf ("    _ no restriction\n");
 	printf("Example:\n");
-	printf("./HFold --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n");
-	printf("./HFold --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
+	printf("HFold --s \"GCAACGAUGACAUACAUCGCUAGUCGACGC\" --r \"(____________________________)\"\n");
+	printf("HFold --i \"/home/username/Desktop/myinputfile.txt\" --o \"/home/username/Desktop/some_folder/outputfile.txt\"\n");
 	printf("Please read README for more details\n");
 }
